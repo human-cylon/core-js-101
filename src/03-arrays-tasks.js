@@ -254,12 +254,8 @@ function toArrayOfSquares(arr) {
  *   [ 0, 0, 0, 0, 0]         => [ 0, 0, 0, 0, 0]
  *   [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] => [ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55 ]
  */
-function getMovingSum(arr) {
-  return arr.map((item, ind) => {
-    if (ind === 0) return item;
-    // const newItem = item[ind - 1];
-    
-  });
+function getMovingSum(/* arr */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -300,10 +296,6 @@ function getSecondItems(arr) {
  *  [ 1,2,3,4,5 ] => [ 1, 2,2, 3,3,3, 4,4,4,4, 5,5,5,5,5 ]
  */
 function propagateItemsByPositionIndex(arr) {
-  // throw new Error('Not implemented');
-  // if ind == 0, place item once
-  // if ind == 1, place item twice
-  // if ind == 2, place item three times
   const newArr = [];
   arr.map((item, ind) => {
     newArr.push(Array(ind + 1).fill(item));
